@@ -8,7 +8,7 @@ using System.Web.Http;
 
 namespace GolfClub_CA2Idea_API.Controllers
 {
-    [RoutePrefix("api/Comp")]
+    [RoutePrefix("api/Comps")]
     public class CompetitionController : ApiController
     {
         private static List<Competition> CompList = new List<Competition>
