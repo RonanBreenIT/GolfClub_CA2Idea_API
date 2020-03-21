@@ -13,7 +13,8 @@ namespace GolfClub_CA2Idea_API.Controllers
     {
         private static List<GolfClub> ClubList = new List<GolfClub>
         {
-            new GolfClub(){ID = 1, Name="Stackstown G.C." },
+            
+            new GolfClub(){ID = 1, Name="Stackstown G.C.",},
             new GolfClub(){ID = 2, Name="The Grange G.C." },
             new GolfClub(){ID = 3, Name="Ratfarnham G.C." }
         };
@@ -84,7 +85,6 @@ namespace GolfClub_CA2Idea_API.Controllers
             if (foundClub == null)
             {
                 return BadRequest("Club ID Doesn't Exist");
-
             }
             else
             {
