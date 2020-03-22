@@ -44,12 +44,24 @@ namespace GolfClub_CA2Idea_API.Models
         public int CompID { get; set; }
 
         [DisplayFormat(NullDisplayText = "No Score")]
-        public int? StokeScore { get; set; }  // ? allows Nullable score
+        private int? strokescore;
+        public int? StrokeScore
+        {
+            get
+            {
+                return this.strokescore;
+            }
+            set
+            {
+                this.strokescore = value - this.handicap;
+            }
+        }
+         // ? allows Nullable score
 
         [DisplayFormat(NullDisplayText = "No Score")]
         public int? StableScore { get; set; }
 
-        //public virtual ICollection<Competition> CompName { get; set; }
+        public virtual ICollection<Competition> Comps { get; set; } // Golfers can play many Comps
 
         public Golfer()
         {

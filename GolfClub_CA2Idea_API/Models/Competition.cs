@@ -26,6 +26,6 @@ namespace GolfClub_CA2Idea_API.Models
 
         public GolfClub Club { get; set; } // specific to each club
 
-        public virtual ICollection<Golfer> GUI { get; set; } // Many Golfers in each Comp
+        public virtual ICollection<Golfer> Golfers { get; set; } // Many Golfers in each Comp
     }
 }

@@ -13,22 +13,12 @@ namespace GolfClub_CA2Idea_API.Models
 
         public string Name { get; set; }
 
-        public virtual ICollection<Golfer> GolferGUI { get; set; }
+        public virtual ICollection<Golfer> Golfers { get; set; } // Many Golfers in each Comp
 
-        //public string CompName { get; set; }
-
-        public virtual ICollection<Competition> CompName { get; set; }
+        public virtual ICollection<Competition> Comps { get; set; }
 
         public GolfClub()
         {
-        }
-
-        public GolfClub(int _id, string _name, List<Golfer> _GUI, List<Competition> _compName)
-        {
-            ID = _id;
-            Name = _name;
-            GolferGUI = _GUI;
-            CompName = _compName;
         }
     }
 }

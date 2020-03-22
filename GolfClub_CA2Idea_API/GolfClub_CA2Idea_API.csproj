@@ -156,6 +156,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\CompetitionController.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Models\Course.cs" />
     <Compile Include="Controllers\GolfClubController.cs" />
     <Compile Include="Controllers\GolferController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
